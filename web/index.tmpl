@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Name generator</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+
+<div class="container-fluid">
+   <div class="row">
+   <div class="col-sm bg-light">
+    
+    <h2>Name generator</h2>
+    Generates a random name from the list of adjectives and surnames formatted as "adjective_surname" (e.g. 'focused_turing'); as used by docker to generate unique container names, see <a href="https://pkg.go.dev/github.com/docker/docker/pkg/namesgenerator">namesgenerator</a>.
+
+    <p class="lead">
+      <form method="POST" action="/">  
+        <input class="btn btn-lg btn-primary" type="submit" value="generate" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample"/>
+      </form>
+    </p>
+
+      {{if .Message }}
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+      {{ .Message }}
+        </div>
+    {{end}}
+
+  </div>
+  
+  </div>
+  </div>
+</div>
+
+ </body>
+</html>
+
+
