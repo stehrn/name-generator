@@ -4,6 +4,6 @@ As used by docker to generate unique container names, see <a href="https://pkg.g
 
 ```
 cd web
-run main.go
+go run main.go
 ```
 open browser at localhost:8080
